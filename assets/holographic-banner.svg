@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">Mubashireen Shaik — holographic developer banner</title>
+  <desc id="description">A dark navy holographic banner with animated cyan and violet light, a digital grid, and a developer identity.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="0.55" stop-color="#0b1530"/>
+      <stop offset="1" stop-color="#170d32"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#31e8f4"/>
+      <stop offset="0.48" stop-color="#6486ff"/>
+      <stop offset="1" stop-color="#bc72ff"/>
+      <animate attributeName="x1" values="0;1;0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1;0;1" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#3edcf2" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" rx="26" fill="url(#background)"/>
+  <rect width="1200" height="360" rx="26" fill="url(#grid)"/>
+  <path d="M0 287C214 228 348 342 574 274S951 224 1200 276V360H0Z" fill="#121837" opacity="0.55"/>
+  <path d="M0 294C214 235 348 349 574 281S951 231 1200 283" fill="none" stroke="url(#neon)" stroke-width="2" opacity="0.8" filter="url(#glow)"/>
+  <rect x="28" y="28" width="1144" height="304" rx="20" fill="none" stroke="url(#neon)" stroke-width="2" opacity="0.85" filter="url(#glow)"/>
+  <rect x="28" y="28" width="1144" height="304" rx="20" fill="none" stroke="#c5f8ff" stroke-opacity="0.25"/>
+  <circle cx="1025" cy="104" r="44" fill="none" stroke="url(#neon)" stroke-width="2" opacity="0.8"/>
+  <circle cx="1025" cy="104" r="29" fill="none" stroke="#43e7f3" stroke-opacity="0.55" stroke-dasharray="4 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 1025 104" to="360 1025 104" dur="22s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1025" cy="104" r="7" fill="#73f5ff" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.55;1;0.55" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="84" y="110" fill="#91f7ff" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="5">DEVELOPER PROFILE / 001</text>
+  <text x="80" y="184" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">MUBASHIREEN SHAIK</text>
+  <text x="84" y="228" fill="#bfd1f5" font-family="Arial, Helvetica, sans-serif" font-size="23" letter-spacing="1">COMPUTER SCIENCE  /  SOFTWARE  /  AI</text>
+  <text x="84" y="290" fill="#6feaf5" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="3">REVA UNIVERSITY  ·  BENGALURU, INDIA</text>
+  <path d="M1025 165V222M996 194H1054" stroke="url(#neon)" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="1070" cy="260" r="3" fill="#72ecf7">
+    <animate attributeName="opacity" values="0.25;1;0.25" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1095" cy="260" r="3" fill="#927cff">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1120" cy="260" r="3" fill="#ca7fff">
+    <animate attributeName="opacity" values="0.25;1;0.25" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

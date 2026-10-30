@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220" role="img" aria-labelledby="title description">
+  <title id="title">Holographic AI assistant symbol</title>
+  <desc id="description">An animated cyan and violet AI core surrounded by orbital rings and pulsing connection points.</desc>
+  <defs>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#37f1f5"/>
+      <stop offset="0.52" stop-color="#648cff"/>
+      <stop offset="1" stop-color="#c475ff"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="110" cy="110" r="88" fill="#0a1125" stroke="#44dff2" stroke-opacity="0.35"/>
+  <circle cx="110" cy="110" r="72" fill="none" stroke="url(#core)" stroke-width="2" stroke-dasharray="8 8" opacity="0.85">
+    <animateTransform attributeName="transform" type="rotate" from="0 110 110" to="360 110 110" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <ellipse cx="110" cy="110" rx="84" ry="38" fill="none" stroke="#9e73ff" stroke-width="1.5" opacity="0.85">
+    <animateTransform attributeName="transform" type="rotate" from="0 110 110" to="-360 110 110" dur="13s" repeatCount="indefinite"/>
+  </ellipse>
+  <path d="M110 66L148 88V132L110 154L72 132V88Z" fill="#101d3c" stroke="url(#core)" stroke-width="3" filter="url(#glow)"/>
+  <path d="M91 96L102 107L91 118M108 119H129" fill="none" stroke="#83f5ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="110" cy="38" r="5" fill="#43ecf7" filter="url(#glow)">
+    <animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="174" cy="145" r="4" fill="#be7bff">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="47" cy="146" r="4" fill="#56cfff">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.7s" repeatCount="indefinite"/>
+  </circle>
+</svg>
